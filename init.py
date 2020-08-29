@@ -7,5 +7,5 @@ bot = commands.Bot(command_prefix=",")
 
 bot.add_command(roll)
 
-
-bot.run("NzMxODYzOTM1NTk0MDA0NTEy.XwsR_Q.fCO19DD5BEpxX8moJ2pKHCghZXc")
+with open("token.txt") as tokenfile:
+    bot.run(tokenfile.read())
